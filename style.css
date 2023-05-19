@@ -1,7 +1,10 @@
+a {
+    color: black;
+}
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #f1e4db;
+    background-color: rgb(55, 55, 55);
     height: 4vw;
     min-height: 3vw;
     position: fixed;
@@ -30,7 +33,7 @@ nav ul li a {
     padding: 0 20px;
     text-decoration: none;
     text-decoration-color: palevioletred;
-    color: #000;
+    color: white;
     font-size: 1vw;
     font-weight: bold;
     transition: all 0.2s ease;
@@ -47,10 +50,11 @@ h1 {
     font-family: 'Satisfy', cursive;
     font-size: 2vw;
     height: 100%;
+    color: palevioletred;
 }
 .banner {
     width: 100%;
-    height: 50vw;
+    height: 120vh;
     padding-bottom: 5%;
 }
 .shopNow {
@@ -77,6 +81,19 @@ h1 {
     text-decoration: underline;
 }
 .header {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-15%);
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 600;
+    color: whitesmoke;
+    text-shadow: 12px 12px 12px rgb(193, 159, 188);
+}
+.header2 {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -117,13 +134,13 @@ h1 {
 }
 h2 {
     font-size: 3vw;
-    color: palevioletred;
+    color: rgb(137, 197, 197);
     text-align: center;
     font-family: 'Satisfy', cursive;
 }
 h3 {
     font-size: 1.5vw;
-    color: palevioletred;
+    color: paleturquoise;
 }
 .products .sub-heading {
     color: black;
@@ -138,7 +155,7 @@ h3 {
     font-size: 1.5vw;
     margin: 2vw;
     padding: 2vw;
-    background-color: #f1e4db;
+    background-color: lightgray;
     border: solid 2px gray;
     box-shadow: 1px 1px 8px black;
     cursor: pointer;
@@ -167,44 +184,88 @@ h3 {
 .social {
     padding-left: 6%;
 }
-.footer-menu {
-    position: static;
-    width: 100%;
-    bottom: 100%; left: 0;
-    margin: 0 auto;
-    background-color: #f1e4db;
+.footer {
+    background-color: rgb(55, 55, 55);;
+    padding: 20px 0;
+    color: white;
+  }
+  
+.footer-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
-.footer-menu .row {
-    text-align: center;
+
+.footer-section {
+flex-basis: 30%;
+margin-bottom: 20px;
 }
-.footer-menu .row h6 {
-    font-size: 3vw;
-    font-family: 'Satisfy', cursive;
-    margin-top: 5%;
+
+.footer-section h3 {
+font-size: 18px;
+margin-bottom: 10px;
 }
-.footer-menu .row li {
-    list-style: none;
-    -ms-transform: translateY(-50%);
-    transform: translateY(50%);
+
+.social-media a {
+color: white;
+margin-right: 10px;
 }
-.footer-menu .row ul {
-    list-style: none;
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+.footer-bottom {
+text-align: center;
+margin-top: 20px;
 }
-.footer-menu .row ul li {
-    padding-left: 1vw;
-    padding-right: 1vw;
+.footer h3 {
+    color: paleturquoise;
 }
-.footer-menu .row ul li a {
-    text-decoration: none;
-    font-size: 1vw;
-    color: black;
+.contact-box {
+margin-top: 15%;
+display: grid;
+place-items: center;
 }
-.footer-menu .row ul li a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+.contact-box h1 {
+text-align: center;
+padding: 0%;
+font-size: 60px;
+}
+.contact-box p {
+margin-top: -25px;
+font-size: 25px;
+margin-bottom: 5%;
+}
+form {
+max-width: 400px;
+margin: 0 auto;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button[type="submit"] {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 15px;
+margin-bottom: 50%;
+}
+
+button[type="submit"]:hover {
+background-color: #45a049;
 }
 

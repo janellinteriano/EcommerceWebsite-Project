@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        <title>Sole Sisters | Comfortable Women's Shoes</title>
     </head>
-    <body>
+    <body class="contact-body">
         <nav>
             <h1 class="title">Sole Sisters</h1>
             <ul>
@@ -21,24 +21,47 @@
         </nav>
 
         <div class="contact-box">
-            
+            <h1>Contact us</h1>
+            <p>Feel free to send us a message regarding any issues or questions about your order!</p>
 
 
-
+            <form action="/send-message" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit">Send Message</button>
+              </form>
+              
         </div>
-        <footer class="footer-menu">
-            <div class="row">
-                <h6>Sole Sisters</h6>
-                <i class="fa-brands fa-instagram footer-icon"></i>
-                <i class="fa-brands fa-facebook footer-icon"></i>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Size Chart</a></li>
-                    <li><a href="#">AfterPay</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-section">
+                <h3>About Us</h3>
+                <p>At Sole Sisters, we strive to make woman feel beautiful in our shoes. Whether you are looking for a casual, chic, or sassy look, Sole Sisters has you covered! </p>
+              </div>
+              <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: solesistersco@hotmail.com</p>
+                <p>Phone: 123-456-7890</p>
+              </div>
+              <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
-        </footer>
+            <div class="footer-bottom">
+              <p>&copy; 2023 Sole Sisters. All rights reserved.</p>
+            </div>
+          </footer>
     </body>
 </html>
